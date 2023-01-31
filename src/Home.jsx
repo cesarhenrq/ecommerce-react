@@ -64,7 +64,7 @@ class Home extends React.Component {
       key={index}
         productIndex={index}/>))}
         </section>
-        <Button name="Ir para o carrinho" changePage={this.props.changePage.bind(this)} page="kart"/>
+        <Button name="Ir para o carrinho" changePage={this.props.changePage.bind(this)} page="cart"/>
         <Footer/>
       </div>
       )

@@ -45,7 +45,7 @@ class App extends React.Component {
     } else if(this.state.page === 'cart') {
       return (
         <main>
-          <Cart/>
+          <Cart cart={this.state.kartGames}/>
         </main>
       )
     }
