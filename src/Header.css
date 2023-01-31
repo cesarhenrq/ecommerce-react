@@ -1,0 +1,19 @@
+.header-container{
+  height: 92px;
+  padding: 0 40px;
+  background-color: #6950A1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Play
+}
+
+.page-title{
+  color: white;
+  font-weight: lighter;
+}
+
+.figure-container{
+  margin: 0;
+  padding: 0;
+  }
