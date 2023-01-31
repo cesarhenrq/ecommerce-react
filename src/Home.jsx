@@ -50,8 +50,12 @@ class Home extends React.Component {
   render() {
     return(
       <div className="home-container">
-        <Header source="../logo-arnia.png" title="Loja Virtual"/>
-        <Title title="Produtos" quantity={this.state.quantity}/>
+        <Header 
+        source="../logo-arnia.png"            title="Loja Virtual"/>
+        <Title 
+        title="Produtos" 
+        quantity={this.state.quantity}
+        display="block"/>
         <section className="products-container">
         {games.map((game, index)=> (
       <Product 
