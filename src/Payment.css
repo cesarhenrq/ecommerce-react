@@ -1,0 +1,21 @@
+.payment-container {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 0 100px 0;
+}
+
+.payment-container > div {
+  padding: 0 40px;
+  margin: 0 0 20px 0;
+}
+
+.game-image-container {
+  padding: 0 40px;
+  display: flex;
+  margin: 0 0 25px 0;
+}
+
+.game-image {
+  border-radius: 5px;
+  margin: 0 25px 0 0;
+}

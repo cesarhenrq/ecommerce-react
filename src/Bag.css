@@ -1,0 +1,25 @@
+.bag-container {
+  padding: 0 40px;
+  margin: 0 0 70px 0;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+}
+
+.info {
+  margin: 0 0 0 30px;
+}
+
+.info > div {
+  margin: 0 0 15px 0;
+}
+
+.button {
+  margin: 0 10px 0 0;
+  font-size: 24px;
+  width: 40px;
+}
+
+img {
+  width: 15%
+}

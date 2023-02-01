@@ -1,8 +1,32 @@
-.product-container{
+.product-container {
   width: 30%;
+  margin: 0 0 50px 0;
   font-weight: bold;
 }
 
-.product-image{
-  width: 100%;
+.product-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.product-image {
+  width: 70%;
+  border-radius: 5px;
+}
+
+.checkbox-price-container {
+  font-size: 20px;
+  padding: 0 0 0 15%;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.input-checkbox {
+  border: 3px solid #6950A1
+}
+
+.input-checkbox:checked {
+  background-color: #6950A1
 }

@@ -1,22 +1,29 @@
-import React from 'react'
+import React from 'react';
+import './Bag.css';
 
 const Bag = ({name, price, image, quantity, index, increaseQuantity, decreaseQuantity}) => {
   return(
     <div className="bag-container">
-      <img src={image} alt={`game-${name}-poster`}/>
+      <img 
+      src={image} 
+      alt={`game-${name}-poster`}/>
       <div className="info">
-        <span>
+        <div>
           {name}
-        </span>
-        <span>
+        </div>
+        <div>
           {`Valor: R$${price}`}
-        </span>
-        <span>
+        </div>
+        <div>
           {`Quantidade: ${quantity}`}
-        </span>
+        </div>
         <div className="buttons-container">
-          <button onClick={() => increaseQuantity(index)}>+</button>
-          <button onClick={() => decreaseQuantity(index)}>-</button>
+          <button 
+          onClick={() => increaseQuantity(index)}
+          className="button">+</button>
+          <button 
+          onClick={() => decreaseQuantity(index)}
+          className="button">-</button>
         </div>
       </div>
     </div>

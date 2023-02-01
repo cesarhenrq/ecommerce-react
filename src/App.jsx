@@ -25,17 +25,17 @@ class App extends React.Component {
   addGame = (game) => {
     this.setState({ 
   cart: [...this.state.cart, game]
-      }, () => { this.calculateTotalQuantity();
-this.calculateTotal(); 
-               });
+      }, () => {                            this.calculateTotalQuantity();
+       this.calculateTotal(); 
+    });
   };
 
   removeGame = (index) => {
     this.setState({
       cart: this.state.cart.splice(index, 1)
-    },() => { this.calculateTotalQuantity();
-this.calculateTotal(); 
-            });
+    }, () => {                            this.calculateTotalQuantity();
+     this.calculateTotal(); 
+    });
   };
 
   componentDidMount() {
@@ -74,14 +74,14 @@ this.calculateTotal() })
 
   calculateTotalQuantity = () => {
     const totalQuantity = this.state.cart.reduce(
-      (acc, obj) => acc + obj.quantity,
+      (acc, cartItem) => acc + cartItem.quantity,
       0)
     this.setState({totalQuantity})
   }
 
   calculateTotal = () => {
     const total = this.state.cart.reduce(
-      (acc, obj) => acc + obj.quantity * obj.price,
+      (acc, cartItem) => acc + cartItem.quantity * cartItem.price,
       0
     );
     this.setState({total});
@@ -93,9 +93,10 @@ this.calculateTotal() })
       return (
         <main>
          <Home 
-           changePage={this.changePage}
-           addGame={this.addGame}
-           removeGame={this.removeGame}/>
+         changePage={this.changePage}
+         addGame={this.addGame}
+         removeGame={this.removeGame}
+         />
         </main>
       )
     } else if(this.state.page === 'cart') {

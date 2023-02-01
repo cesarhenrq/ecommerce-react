@@ -1,5 +1,5 @@
 .button-container {
-  text-align: end;
+  padding: 0 40px;
 }
 
 button {
@@ -8,4 +8,6 @@ button {
   border: none;
   padding: 8px;
   border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
 }

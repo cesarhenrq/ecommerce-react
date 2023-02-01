@@ -1,13 +1,14 @@
-import React from 'react'
-import Header from './Header.jsx'
-import Title from './Title.jsx'
-import Button from './Button.jsx'
-import Footer from './Footer.jsx'
-import Bag from './Bag.jsx'
+import React from 'react';
+import Header from './Header.jsx';
+import Title from './Title.jsx';
+import Button from './Button.jsx';
+import Footer from './Footer.jsx';
+import Bag from './Bag.jsx';
+import './Cart.css'
 
 const Cart = ({cart, totalQuantity, total, increaseQuantity, decreaseQuantity, changePage}) => {
     return(
-      <section>
+      <section className="cart-container">
         <Header 
         title="Loja Virtual"                  source="../logo-arnia.png"/>
         <Title 
@@ -24,7 +25,7 @@ const Cart = ({cart, totalQuantity, total, increaseQuantity, decreaseQuantity, c
              index={index}
              key={index}/>
         ))}
-        <span>{`Total: R$${total}`}</span>
+        <div className="price-total">{`Total: R$${total}`}</div>
         <Button 
         changePage= {changePage}
         name="Finalizar compra"               page="payment"/>

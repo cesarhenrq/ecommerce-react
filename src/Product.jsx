@@ -10,10 +10,15 @@ const Product = ({name, price, image, addProduct, removeProduct, product, produc
         alt={`${name} poster image`}
         src={image}/>
       </figure>
-      <input type="checkbox" onClick={(event) => (event.target.checked ?addProduct(product) : removeProduct(0))}/>
+      <div className="checkbox-price-container">
+      <input 
+      type="checkbox" 
+      onClick={(event) =>                   (event.target.checked ?               addProduct(product) :                 removeProduct(productIndex))}
+      className="input-checkbox"/>
       <span className="price">
       {`Valor: R$${price}`}
       </span>
+      </div>
     </div>
     )
 }

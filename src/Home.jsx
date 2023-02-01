@@ -49,14 +49,14 @@ class Home extends React.Component {
     
   render() {
     return(
-      <div className="home-container">
+      <section className="home-container">
         <Header 
         source="../logo-arnia.png"            title="Loja Virtual"/>
         <Title 
         title="Produtos" 
         quantity={this.state.quantity}
         display="block"/>
-        <section className="products-container">
+        <div className="products-container">
         {games.map((game, index)=> (
       <Product 
       name={game.name} 
@@ -67,10 +67,12 @@ class Home extends React.Component {
       removeProduct={this.removeProduct} 
       key={index}
         productIndex={index}/>))}
-        </section>
-        <Button name="Ir para o carrinho" changePage={this.props.changePage.bind(this)} page="cart"/>
+        </div>
+        <Button 
+        name="Ir para o carrinho"             changePage={this.props.changePage.bind(this)}            page="cart"
+        align="end"/>
         <Footer/>
-      </div>
+      </section>
       )
   }
 }

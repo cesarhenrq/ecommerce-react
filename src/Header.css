@@ -1,4 +1,4 @@
-.header-container{
+.header-container {
   height: 92px;
   padding: 0 40px;
   background-color: #6950A1;
@@ -8,12 +8,17 @@
   font-family: Play
 }
 
-.page-title{
+.page-title {
   color: white;
-  font-weight: lighter;
+  font-weight: 300;
+  font-size: 40px;
 }
 
-.figure-container{
+.figure-container {
   margin: 0;
   padding: 0;
-  }
+}
+
+.logo-header-figure {
+  width: 150px;
+}
